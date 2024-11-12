@@ -25,7 +25,65 @@ const routes = [
     name: 'test',
     //component: () => import(/* webpackChunkName: "test" */ '../views/TestView.vue')
     component:TestView
-  }
+  },
+
+  {
+    path: '/string',
+    name: 'string',
+    component: () => import(/* webpackChunkName: "string" */ '../views/DataBinding/DataBindingStr.vue')
+    
+  },
+
+  {
+    path: '/html',
+    name: 'html',
+    component: () => import(/* webpackChunkName: "databindin" */ '../views/DataBinding/HtmlView.vue')
+    
+  },
+
+  {
+    path: '/Atv',
+    name: 'Atv',
+    component: () => import(/* webpackChunkName: "databindin" */ '../views/DataBinding/AtvView.vue')
+    
+  },
+
+  {
+    path: '/class',
+    name: 'class',
+    component: () => import(/* webpackChunkName: "databindin" */ '../views/DataBinding/classView.vue')
+    
+  },
+
+  {
+    path: '/input',
+    name: 'input',
+    component: () => import(/* webpackChunkName: "databindin" */ '../views/DataBinding/inputView.vue')
+    
+  },
+
+  {
+    path: '/list',
+    name: 'list',
+    component: () => import(/* webpackChunkName: "databindin" */ '../views/DataBinding/listView.vue')
+    
+  },
+
+  {
+    path: '/CbRdSc',
+    name: 'CbRdSc',
+    component: () => import(/* webpackChunkName: "databindin" */ '../views/DataBinding/CbRdScView.vue')
+    
+  },
+
+  {
+    path: '/calcul',
+    name: 'calcul',
+    component: () => import(/* webpackChunkName: "databindin" */ '../views/DataBinding/CalculatorView.vue')
+    
+  },
+
+  
 ]
 
 const router = createRouter({

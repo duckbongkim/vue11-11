@@ -1,0 +1,4 @@
+text 바인딩 = {{data}}
+html 바인딩 = v-html='data'
+attribute 바인딩 v-bind = 'data',:속성='dat'
+v-model 바인딩 v-model = "data"양방향 바인딩 (template <-> Scripte.data)
