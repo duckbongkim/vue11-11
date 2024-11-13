@@ -10,7 +10,7 @@
     <button @click="mulNum()">곱하기</button>
     <button @click="divNum()">나누기</button>
     <br/>
-    <input type="text" v-model.number="num1"> <span>{{sign}}</span>
+    <input type="text" v-model.number="num1"> <span> {{ sign }} </span>
     <input type="text" v-model.number="num2"> =
     <span>{{Num3}}</span>
     <br>

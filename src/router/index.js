@@ -83,6 +83,52 @@ const routes = [
     
   },
 
+  {
+    path: '/Click',
+    name: 'Click',
+    component: () => import(/* webpackChunkName: "event" */ '../views/Event/ClickView.vue')
+    
+  },
+  {
+    path: '/Change',
+    name: 'Change',
+    component: () => import(/* webpackChunkName: "event" */ '../views/Event/ChangeView.vue')
+    
+  },
+  {
+    path: '/key',
+    name: 'key',
+    component: () => import(/* webpackChunkName: "event" */ '../views/Event/keyView.vue')
+    
+  },
+
+  {
+    path: '/render',
+    name: 'render',
+    component: () => import(/* webpackChunkName: "event" */ '../views/Extra/RenderView.vue')
+    
+  },
+  {
+    path: '/rendershow',
+    name: 'rendershow',
+    component: () => import(/* webpackChunkName: "event" */ '../views/Extra/RenderShowView.vue')
+    
+  },
+
+  {
+    path: '/compu',
+    name: 'compu',
+    component: () => import(/* webpackChunkName: "event" */ '../views/Extra/CompuView.vue')
+    
+  },
+
+  {
+    path: '/Watch',
+    name: 'Watch',
+    component: () => import(/* webpackChunkName: "event" */ '../views/Extra/WatchView.vue')
+    
+  },
+
   
 ]
 

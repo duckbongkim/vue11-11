@@ -2,6 +2,7 @@
 <div>
     <div v-html="htmlString"></div>
     <div v-html="htmlString" :style="style1"></div>
+    <p v-html="htmlString"></p>
     <button @click="style1.color='blue'">색상바꾸기</button>
     <button @click="style1.color='green'">색상바꾸기</button>
     <button @click="colors()">콘솔로그 보기</button>

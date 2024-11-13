@@ -3,6 +3,9 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/CbRdSc">Binding</router-link> |
+    <router-link to="/key">Event</router-link> |
+    <router-link to="/rendershow">Extra</router-link> |
+    <router-link to="/Watch">Watch</router-link> |
    
   </nav>
   <router-view/>
