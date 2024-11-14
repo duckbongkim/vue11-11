@@ -16,8 +16,8 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     //component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-    //component: () => import(/* webpackChunkName: "about", webpackPrefetch:true */ '../views/AboutView.vue')
-    component:AboutView
+    component: () => import(/* webpackChunkName: "about", webpackPrefetch:true */ '../views/AboutView.vue')
+    
   },
   
   {
@@ -128,6 +128,43 @@ const routes = [
     component: () => import(/* webpackChunkName: "event" */ '../views/Extra/WatchView.vue')
     
   },
+
+  {
+    path: '/Change2',
+    name: 'Change2',
+    component: () => import(/* webpackChunkName: "event" */ '../views/Event/Change2View.vue')
+    
+  },
+
+  {
+    path: '/life',
+    name: 'lief',
+    component: () => import(/* webpackChunkName: "event" */ '../views/Extra/LifeCycleView.vue')
+    
+  },
+
+  {
+    path: '/Pageview',
+    name: 'Pageview',
+    component: () => import(/* webpackChunkName: "event" */ '../views/reuse/PageView.vue')
+    
+  },
+
+  {
+    path: '/parent',
+    name: 'parnet',
+    component: () => import(/* webpackChunkName: "event" */ '../views/reuse/ParentView.vue')
+    
+  },
+
+  {
+    path: '/parent2',
+    name: 'parnet2',
+    component: () => import(/* webpackChunkName: "event" */ '../views/reuse/ParentView2.vue')
+    
+  },
+
+
 
   
 ]

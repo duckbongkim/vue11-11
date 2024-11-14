@@ -7,7 +7,7 @@
     </select>
      <select name="" id="">
         <option value="" v-for="train in trainList" :key="train.trainCode">{{train.time}}</option>
-        <!-- <option value="" v-for="train in trainList.filter((train) => train.cityCode === seletedcity)" :key="train.trainCode">{{train.time}}</option> -->
+    <!-- <option value="" v-for="train in trainList.filter((train) => train.cityCode === seletedcity)" :key="train.trainCode">{{train.time}}</option> -->
     </select>
 </div>
 </template>

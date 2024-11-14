@@ -35,8 +35,8 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
-  }
+    msg: String // String >> 자료형을 명시
+  }  // props 자식 컴포넌에서만 작성 
 }
 </script>
 
