@@ -164,6 +164,27 @@ const routes = [
     
   },
 
+  {
+    path: '/table',
+    name: 'table',
+    component: () => import(/* webpackChunkName: "event" */ '../views/reuse/tableView.vue')
+    
+  },
+
+  {
+    path: '/table2',
+    name: 'table2',
+    component: () => import(/* webpackChunkName: "event" */ '../views/reuse/table2View.vue')
+    
+  },
+
+  {
+    path: '/table3',
+    name: 'table3',
+    component: () => import(/* webpackChunkName: "event" */ '../views/reuse/GridView.vue')
+    
+  },
+
 
 
   

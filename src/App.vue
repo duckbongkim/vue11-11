@@ -11,6 +11,9 @@
     <router-link to="/PageView">reuse</router-link> |
     <router-link to="/parent">parent</router-link> |
     <router-link to="/parent2">parent2</router-link> |
+    <router-link to="/table">table</router-link> |
+    <router-link to="/table2">table2</router-link> |
+    <router-link to="/table3">table3</router-link> |
    
   </nav>
   <router-view/><!-- view에서 만든 vue 파일을 라우터에서 경로지정된 컴포넌트만 갈아줌-->
