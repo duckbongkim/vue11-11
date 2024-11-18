@@ -1,6 +1,7 @@
 <template>
 <div>
     <button class="btn btn-danger" @click="clickSearch()">조회</button>
+    <button class="btn btn-danger" @click="deleteData()">삭제</button>
     <br />
     <br />
 
@@ -8,6 +9,8 @@
     :headers ="parentData"
     :items ="tableList"
     @diff-change ="changeDiff"
+    @change-item ="checkBoxSelected"
+    @delete-item ="radioSelected"
      />
 </div>
 </template>
@@ -28,6 +31,12 @@ export default{
                 {title:'전일', key:'diff'},
             ],
             allData:[],
+
+            checkedItems:[],
+            checkedRadio:[],
+
+           
+            
         };
     },
     setup(){},
@@ -83,7 +92,33 @@ export default{
             else {
                 this.tableList = this.allData
             }
-        }
+            
+        },
+
+        checkBoxSelected(data){
+            console.log(data)
+            this.checkedItems = data
+            
+        }, // this.checkedItems = data >> checkedItems:[] 대입
+
+        radioSelected(data){
+            this.checkedRadio = data
+        },
+
+
+        deleteData(){  //includes 는 참,거짓으로 결과가 도출됨, !(not)을 붙여 결과값을 반대로 도출함 >> 선택된 값이 사라지고 선택이 안된 데이터만 남아 있게됨
+            this.tableList = this.tableList.filter(
+                (data)=> !this.checkedItems.includes(data.exchange)
+            )
+
+            this.tableList = this.tableList.filter(
+                (data)=> !this.checkedRadio.includes(data.exchange)
+            )
+            
+            
+        },
+
+       
 
     }
 }

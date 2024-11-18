@@ -185,6 +185,29 @@ const routes = [
     
   },
 
+  {
+    path: '/slot',
+    name: 'slot',
+    component: () => import(/* webpackChunkName: "event" */ '../views/reuse/slotView.vue')
+    
+  },
+
+  {
+    path: '/rute',
+    name: 'rute',
+    component: () => import(/* webpackChunkName: "event" */ '../views/reuse/ruteView.vue')
+    
+  },
+
+  {
+    path: '/custom',
+    name: 'custom',
+    component: () => import(/* webpackChunkName: "event" */ '../views/adevenced/cutomView.vue')
+    
+  },
+
+
+
 
 
   

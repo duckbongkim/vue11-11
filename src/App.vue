@@ -14,6 +14,9 @@
     <router-link to="/table">table</router-link> |
     <router-link to="/table2">table2</router-link> |
     <router-link to="/table3">table3</router-link> |
+    <router-link to="/slot">slot</router-link> |
+    <router-link to="/rute">Provide inject</router-link> |
+    <router-link to="/custom">custom</router-link> |
    
   </nav>
   <router-view/><!-- view에서 만든 vue 파일을 라우터에서 경로지정된 컴포넌트만 갈아줌-->
