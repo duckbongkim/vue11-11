@@ -206,6 +206,21 @@ const routes = [
     
   },
 
+  {
+    path: '/mixin',
+    name: 'mixin',
+    component: () => import(/* webpackChunkName: "event" */ '../views/adevenced/mixInView.vue')
+    
+  },
+
+  {
+    path: '/plugin',
+    name: 'plugin',
+    component: () => import(/* webpackChunkName: "event" */ '../views/adevenced/pluginView.vue')
+    
+  },
+
+
 
 
 

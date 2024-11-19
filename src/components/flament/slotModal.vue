@@ -36,6 +36,11 @@ export default{
         modalId:{
             type:String,
             default:'userModal'
+        },
+
+        modalButton: {
+          type:String,
+          dafault:'안녕하세요'
         }
     },
     setup(){},

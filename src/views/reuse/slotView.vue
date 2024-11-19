@@ -16,7 +16,7 @@
         </template>
 
         <template v-slot:footer>
-            <button class="btn btn-secondary" data-bs-dismiss='modal'>닫기</button>
+            <button class="btn btn-secondary" data-bs-dismiss='modal'></button>
         </template>
 
     </slot-modal><!-- slot-modal == 컴포넌트 안에 있는 SlotModal 과 동일 // 템플릿 안에서는 대소문자 구별이 안되어 - 으로 구별-->
