@@ -220,6 +220,13 @@ const routes = [
     
   },
 
+  {
+    path: '/todos',
+    name: 'todos',
+    component: () => import(/* webpackChunkName: "event" */ '../views/adevenced/vuexView.vue')
+    
+  },
+
 
 
 

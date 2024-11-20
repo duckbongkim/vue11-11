@@ -66,7 +66,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" @click="goToMenu('/mixin')">mixin</a></li>
             <li><a class="dropdown-item" @click="goToMenu('/rute')">Rute</a></li>
-            <li><a class="dropdown-item" @click="goToMenu('/PageView')">PageView</a></li>
+            <li><a class="dropdown-item" @click="goToMenu('/todos')">vuex todos</a></li>
           </ul>
         </li>
 
