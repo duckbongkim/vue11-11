@@ -227,6 +227,14 @@ const routes = [
     
   },
 
+  {
+    path: '/auth',
+    name: 'auth',
+    component: () => import(/* webpackChunkName: "event" */ '../views/ApiConnect/loginView.vue')
+    
+  },
+
+
 
 
 

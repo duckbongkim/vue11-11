@@ -15,5 +15,6 @@ app.component('pageTitle', pageTitle)
 app.mount('#app')
 app.mixin(mixin)
 app.use(plugin)
+window.Kakao.init('2e7c26d195b8d6ca88d21eca2e09be85')
 
 
